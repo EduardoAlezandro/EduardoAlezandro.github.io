@@ -59,7 +59,7 @@ class ProjectsView extends GetView<ProjectsController> {
                   child: Wrap(
                     runSpacing: 20,
                     children: [
-                      Image.asset("assets/pel1.jpg"),
+                      Image(image: AssetImage('assets/pel1.jpg')),
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Text(
@@ -68,7 +68,7 @@ class ProjectsView extends GetView<ProjectsController> {
                               GoogleFonts.montserrat(fontSize: 20, color: font),
                         ),
                       ),
-                      Image.asset("assets/pel2.jpg"),
+                      Image(image: AssetImage('assets/pel2.jpg')),
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Text(
@@ -77,7 +77,7 @@ class ProjectsView extends GetView<ProjectsController> {
                               GoogleFonts.montserrat(fontSize: 20, color: font),
                         ),
                       ),
-                      Image.asset("assets/pel3.jpg"),
+                      Image(image: AssetImage('assets/pel3.jpg')),
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Text(
@@ -86,7 +86,7 @@ class ProjectsView extends GetView<ProjectsController> {
                               GoogleFonts.montserrat(fontSize: 20, color: font),
                         ),
                       ),
-                      Image.asset("assets/pel4.jpg"),
+                      Image(image: AssetImage('assets/pel4.jpg')),
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Text(
@@ -95,7 +95,7 @@ class ProjectsView extends GetView<ProjectsController> {
                               GoogleFonts.montserrat(fontSize: 20, color: font),
                         ),
                       ),
-                      Image.asset("assets/pel5.jpg"),
+                      Image(image: AssetImage('assets/pel5.jpg')),
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Text(
@@ -104,7 +104,7 @@ class ProjectsView extends GetView<ProjectsController> {
                               GoogleFonts.montserrat(fontSize: 20, color: font),
                         ),
                       ),
-                      Image.asset("assets/pel6.jpg"),
+                      Image(image: AssetImage('assets/pel6.jpg')),
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Text(
@@ -113,7 +113,7 @@ class ProjectsView extends GetView<ProjectsController> {
                               GoogleFonts.montserrat(fontSize: 20, color: font),
                         ),
                       ),
-                      Image.asset("assets/pel7.jpg"),
+                      Image(image: AssetImage('assets/pel6.jpg')),
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Text(
