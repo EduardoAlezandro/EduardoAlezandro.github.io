@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../controllers/home_controller.dart';
 
-const Color font = Color.fromARGB(255, 209, 209, 226);
+const Color font = Color(0xffE6CA76);
 
 const Color RedSoloLeving = Color(0xff710510);
 
@@ -32,16 +32,17 @@ class HomeView extends GetView<HomeController> {
         height: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("Backgroundreal.png"),
+            image: AssetImage("back2.jpg"),
             fit: BoxFit.cover,
             colorFilter: new ColorFilter.mode(
                 Colors.black.withOpacity(0.8), BlendMode.dstATop),
           ),
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-                margin: EdgeInsets.all(60),
+                margin: EdgeInsets.all(70),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,7 +63,7 @@ class HomeView extends GetView<HomeController> {
                       children: [
                         Icon(
                           Icons.adjust_rounded,
-                          color: Color(0xffC3D6D6),
+                          color: font,
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 10.0, bottom: 3),
@@ -107,7 +108,7 @@ class HomeView extends GetView<HomeController> {
         child: FaIcon(
           icon,
           size: 35,
-          color: Colors.white,
+          color: font,
         ),
       ),
     );

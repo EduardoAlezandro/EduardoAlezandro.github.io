@@ -6,12 +6,20 @@ import 'package:google_fonts/google_fonts.dart';
 import '../controllers/about_controller.dart';
 
 class AboutView extends GetView<AboutController> {
+  Color font = Color.fromARGB(255, 209, 209, 226);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('About me'),
         centerTitle: true,
+        elevation: 25,
+        actions: [
+          buttonsNavegacao("Home", "/home"),
+          buttonsNavegacao("About", "/about"),
+          buttonsNavegacao("Experience", "/experience"),
+          buttonsNavegacao("Projects", "/projects"),
+        ],
       ),
       body: Container(
         width: MediaQuery.of(context).size.width,
@@ -88,6 +96,18 @@ class AboutView extends GetView<AboutController> {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  buttonsNavegacao(name, route) {
+    return Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: TextButton(
+        onPressed: () {
+          Get.toNamed("$route");
+        },
+        child: Text("$name", style: GoogleFonts.ptSans(color: font)),
       ),
     );
   }
