@@ -23,7 +23,6 @@ class HomeView extends GetView<HomeController> {
         actions: [
           buttonsNavegacao("Home", "/home"),
           buttonsNavegacao("About", "/about"),
-          buttonsNavegacao("Contact", "/perfil"),
           buttonsNavegacao("Experience", "/experience"),
           buttonsNavegacao("Projects", "/projects"),
         ],
