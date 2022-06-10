@@ -26,8 +26,15 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 flutter:
   assets: 
-    - assets/
     - assets/back1.jpg
     - assets/back2.jpg
+    - assets/imagemAbout.png
+    - assets/pel1.jpg
+    - assets/pel2.jpg
+    - assets/pel3.jpg
+    - assets/pel4.jpg
+    - assets/pel5.jpg
+    - assets/pel6.jpg
+    - assets/pel7.jpg
   uses-material-design: true
 
