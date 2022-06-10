@@ -17,7 +17,7 @@ class HomeView extends GetView<HomeController> {
       appBar: AppBar(
         title: Text(
           'Eduardo D\' Alezandro',
-          style: GoogleFonts.arizonia(),
+          style: GoogleFonts.arizonia(color: font),
         ),
         elevation: 25,
         actions: [
@@ -40,10 +40,14 @@ class HomeView extends GetView<HomeController> {
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-                margin: EdgeInsets.all(70),
-                child: Column(
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                    child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -92,6 +96,8 @@ class HomeView extends GetView<HomeController> {
                     )
                   ],
                 )),
+              ],
+            ),
           ],
         ),
       ),

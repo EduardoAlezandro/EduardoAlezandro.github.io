@@ -6,8 +6,6 @@ import '../modules/experience/bindings/experience_binding.dart';
 import '../modules/experience/views/experience_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
-import '../modules/perfil/bindings/perfil_binding.dart';
-import '../modules/perfil/views/perfil_view.dart';
 import '../modules/projects/bindings/projects_binding.dart';
 import '../modules/projects/views/projects_view.dart';
 
@@ -19,11 +17,6 @@ class AppPages {
   static const INITIAL = Routes.HOME;
 
   static final routes = [
-    GetPage(
-      name: _Paths.PERFIL,
-      page: () => PerfilView(),
-      binding: PerfilBinding(),
-    ),
     GetPage(
       name: _Paths.HOME,
       page: () => HomeView(),

@@ -16,7 +16,7 @@ const Color customErrorRed = Color(0xFFC5032B);
 const Color customSurfaceWhite = Color(0xFFA8F5F4);
 const Color customBackgroundWhite = Color(0xffA8F5F4);
 const Color customBackgroundDark = Color.fromARGB(0, 49, 49, 51);
-const Color font = Color.fromARGB(255, 209, 209, 226);
+const Color font = Color(0xffE6CA76);
 
 void main() {
   runApp(GetMaterialApp(
