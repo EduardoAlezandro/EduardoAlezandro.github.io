@@ -25,9 +25,8 @@ class HomeController extends GetxController {
     super.onReady();
   }
 
-  alaunchUrl(Uri a) async {
-    if (await launchUrl(a, mode: LaunchMode.inAppWebView))
-      throw "Algo errado aconteceu";
+  alaunchUrl(Uri url) async {
+    if (await launchUrl(url, mode: LaunchMode.inAppWebView)) ;
   }
 
   @override

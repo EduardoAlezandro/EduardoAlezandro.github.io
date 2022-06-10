@@ -21,41 +21,11 @@ class HomeView extends GetView<HomeController> {
         ),
         elevation: 25,
         actions: [
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: TextButton(
-              onPressed: () {},
-              child: Text("Home", style: GoogleFonts.ptSans(color: font)),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: TextButton(
-              onPressed: () {},
-              child: Text("Contact", style: GoogleFonts.ptSans(color: font)),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: TextButton(
-              onPressed: () {},
-              child: Text("About", style: GoogleFonts.ptSans(color: font)),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: TextButton(
-              onPressed: () {},
-              child: Text("Experience", style: GoogleFonts.ptSans(color: font)),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: TextButton(
-              onPressed: () {},
-              child: Text("Projects", style: GoogleFonts.ptSans(color: font)),
-            ),
-          ),
+          buttonsNavegacao("Home", "/home"),
+          buttonsNavegacao("About", "/about"),
+          buttonsNavegacao("Contact", "/perfil"),
+          buttonsNavegacao("Experience", "/experience"),
+          buttonsNavegacao("Projects", "/projects"),
         ],
       ),
       body: Container(
@@ -109,58 +79,14 @@ class HomeView extends GetView<HomeController> {
                       padding: const EdgeInsets.only(top: 30.0),
                       child: Row(
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: TextButton(
-                              onPressed: () {
-                                controller.alaunchUrl(controller.urlWhatapp);
-                              },
-                              child: FaIcon(
-                                FontAwesomeIcons.whatsapp,
-                                size: 35,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: TextButton(
-                              onPressed: () {
-                                controller.alaunchUrl(controller.urlLikedin);
-                              },
-                              child: FaIcon(
-                                FontAwesomeIcons.linkedin,
-                                size: 35,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: TextButton(
-                              onPressed: () {
-                                controller.alaunchUrl(controller.urlInstagram);
-                              },
-                              child: FaIcon(
-                                FontAwesomeIcons.instagram,
-                                size: 35,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: TextButton(
-                              onPressed: () {
-                                controller.alaunchUrl(controller.urlGit);
-                              },
-                              child: FaIcon(
-                                FontAwesomeIcons.github,
-                                size: 35,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
+                          iconsRedeSocialButtons(
+                              FontAwesomeIcons.whatsapp, controller.urlWhatapp),
+                          iconsRedeSocialButtons(
+                              FontAwesomeIcons.linkedin, controller.urlLikedin),
+                          iconsRedeSocialButtons(FontAwesomeIcons.instagram,
+                              controller.urlInstagram),
+                          iconsRedeSocialButtons(
+                              FontAwesomeIcons.github, controller.urlGit)
                         ],
                       ),
                     )
@@ -168,6 +94,34 @@ class HomeView extends GetView<HomeController> {
                 )),
           ],
         ),
+      ),
+    );
+  }
+
+  iconsRedeSocialButtons(icon, url) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: TextButton(
+        onPressed: () {
+          controller.alaunchUrl(url);
+        },
+        child: FaIcon(
+          icon,
+          size: 35,
+          color: Colors.white,
+        ),
+      ),
+    );
+  }
+
+  buttonsNavegacao(name, route) {
+    return Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: TextButton(
+        onPressed: () {
+          Get.toNamed("$route");
+        },
+        child: Text("$name", style: GoogleFonts.ptSans(color: font)),
       ),
     );
   }
