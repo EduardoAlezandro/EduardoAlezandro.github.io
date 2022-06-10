@@ -33,7 +33,7 @@ void main() {
     ),
     darkTheme: ThemeData(colorScheme: _customColorSchemeDark),
     themeMode: ThemeMode.dark,
-    title: 'Eduardo APP',
+    title: 'Portfolio',
     initialRoute: AppPages.INITIAL,
     getPages: AppPages.routes,
     transitionDuration: const Duration(seconds: 0),

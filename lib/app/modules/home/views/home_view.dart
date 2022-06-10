@@ -32,29 +32,28 @@ class HomeView extends GetView<HomeController> {
             padding: const EdgeInsets.all(15.0),
             child: TextButton(
               onPressed: () {},
-              child: Text("Contato", style: GoogleFonts.ptSans(color: font)),
+              child: Text("Contact", style: GoogleFonts.ptSans(color: font)),
             ),
           ),
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: TextButton(
               onPressed: () {},
-              child: Text("Sobre", style: GoogleFonts.ptSans(color: font)),
+              child: Text("About", style: GoogleFonts.ptSans(color: font)),
             ),
           ),
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: TextButton(
               onPressed: () {},
-              child:
-                  Text("Experiencias", style: GoogleFonts.ptSans(color: font)),
+              child: Text("Experience", style: GoogleFonts.ptSans(color: font)),
             ),
           ),
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: TextButton(
               onPressed: () {},
-              child: Text("Projeto", style: GoogleFonts.ptSans(color: font)),
+              child: Text("Projects", style: GoogleFonts.ptSans(color: font)),
             ),
           ),
         ],
@@ -112,41 +111,53 @@ class HomeView extends GetView<HomeController> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: IconButton(
-                              onPressed: () {},
-                              icon: FaIcon(
+                            child: TextButton(
+                              onPressed: () {
+                                controller.alaunchUrl(controller.urlWhatapp);
+                              },
+                              child: FaIcon(
                                 FontAwesomeIcons.whatsapp,
                                 size: 35,
+                                color: Colors.white,
                               ),
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: IconButton(
-                              onPressed: () {},
-                              icon: FaIcon(
+                            child: TextButton(
+                              onPressed: () {
+                                controller.alaunchUrl(controller.urlLikedin);
+                              },
+                              child: FaIcon(
                                 FontAwesomeIcons.linkedin,
                                 size: 35,
+                                color: Colors.white,
                               ),
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: IconButton(
-                              onPressed: () {},
-                              icon: FaIcon(
+                            child: TextButton(
+                              onPressed: () {
+                                controller.alaunchUrl(controller.urlInstagram);
+                              },
+                              child: FaIcon(
                                 FontAwesomeIcons.instagram,
                                 size: 35,
+                                color: Colors.white,
                               ),
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: IconButton(
-                              onPressed: () {},
-                              icon: FaIcon(
+                            child: TextButton(
+                              onPressed: () {
+                                controller.alaunchUrl(controller.urlGit);
+                              },
+                              child: FaIcon(
                                 FontAwesomeIcons.github,
                                 size: 35,
+                                color: Colors.white,
                               ),
                             ),
                           ),
