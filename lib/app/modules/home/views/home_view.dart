@@ -32,7 +32,7 @@ class HomeView extends GetView<HomeController> {
         height: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("back2.jpg"),
+            image: AssetImage("assets/back2.jpg"),
             fit: BoxFit.cover,
             colorFilter: new ColorFilter.mode(
                 Colors.black.withOpacity(0.8), BlendMode.dstATop),

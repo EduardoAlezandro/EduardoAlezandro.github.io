@@ -35338,7 +35338,7 @@ hp(a){}}
 A.oo.prototype={
 O(a,b){var s,r,q,p,o,n,m,l,k=this,j=null,i=t.gm,h=t.Ks,g=A.c7("Eduardo D' Alezandro",A.QC(j,j,B.K,j,j,j,j,"Arizonia",j,j,j,j,A.aK([B.cS,new A.bn("603a1ae367969056ace1484bd5db4d882fabfa78008e6843d3ba07c08082c2c7",50688)],i,h),j,j,j,j,j,j,j,j),j,j),f=t.p
 g=A.Ru(A.a([k.cm("Home","/home"),k.cm("About","/about"),k.cm("Experience","/experience"),k.cm("Projects","/projects")],f),j,25,g)
-s=A.Tm(new A.jZ(A.aA(204,0,0,0),B.dI),B.dJ,new A.iE("back2.jpg",j,j))
+s=A.Tm(new A.jZ(A.aA(204,0,0,0),B.dI),B.dJ,new A.iE("assets/back2.jpg",j,j))
 h=A.c7("Welcome to my portfolio !",A.QC(j,j,B.K,j,j,j,j,"Bungee",j,25,j,j,A.aK([B.cS,new A.bn("ee34fb3fe185999f9942b2b39a37688866c1a4e25eab17c7a67765e7f47f6dbe",110116)],i,h),j,j,j,j,j,j,j,j),j,j)
 i=A.c7("Eduardo ",A.acM(B.K,50,j),j,j)
 r=A.c7("D ' Alezandro",A.acM(B.K,60,B.aP),j,j)
