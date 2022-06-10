@@ -29,7 +29,7 @@ class AboutView extends GetView<AboutController> {
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("back1.jpg"),
+            image: AssetImage("assets/back1.jpg"),
             fit: BoxFit.cover,
             colorFilter: new ColorFilter.mode(
                 Colors.black.withOpacity(0.8), BlendMode.dstATop),
@@ -89,7 +89,7 @@ class AboutView extends GetView<AboutController> {
                   height: 300,
                   child: Wrap(
                     children: [
-                      Image.asset("imagemAbout.png"),
+                      Image.asset("assets/imagemAbout.png"),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
