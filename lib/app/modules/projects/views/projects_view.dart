@@ -138,7 +138,7 @@ class ProjectsView extends GetView<ProjectsController> {
       padding: const EdgeInsets.all(15.0),
       child: TextButton(
         onPressed: () {
-          Get.toNamed("$route");
+          Get.offAndToNamed("$route");
         },
         child: Text("$name", style: GoogleFonts.ptSans(color: font)),
       ),
