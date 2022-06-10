@@ -1,0 +1,30 @@
+name: app_eduardo
+description: A new Flutter project.
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.1 <3.0.0"
+
+dependencies:
+  flutter_localizations:
+    sdk: flutter
+  get: ^4.6.5
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^2.3.1
+  animated_text_kit: ^4.2.2
+  font_awesome_flutter: ^9.2.0
+  responsive_table: ^0.2.0+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter:
+  assets: 
+    - assets/
+  uses-material-design: true
+
