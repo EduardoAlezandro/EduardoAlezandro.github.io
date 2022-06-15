@@ -83,7 +83,7 @@ class ExperienceView extends GetView<ExperienceController> {
 
   buttonsNavegacao(name, route) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(2.5),
       child: TextButton(
         onPressed: () {
           Get.offAndToNamed("$route");
@@ -104,7 +104,7 @@ class ExperienceView extends GetView<ExperienceController> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(5),
               child: Text(
                 'Eduardo D\' Alezandro',
                 style: GoogleFonts.arizonia(color: font),
