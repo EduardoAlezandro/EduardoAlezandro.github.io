@@ -9,10 +9,6 @@ class ExperienceView extends GetView<ExperienceController> {
   Color font = Color(0xffE6CA76);
   @override
   Widget build(BuildContext context) {
-    return WebView(context);
-  }
-
-  Scaffold WebView(BuildContext context) {
     return Scaffold(
       body: Container(
         width: MediaQuery.of(context).size.width,
