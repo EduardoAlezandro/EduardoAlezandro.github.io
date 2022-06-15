@@ -14,19 +14,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Eduardo D\' Alezandro',
-          style: GoogleFonts.arizonia(color: font),
-        ),
-        elevation: 25,
-        actions: [
-          buttonsNavegacao("Home", "/home"),
-          buttonsNavegacao("About", "/about"),
-          buttonsNavegacao("Experience", "/experience"),
-          buttonsNavegacao("Projects", "/projects"),
-        ],
-      ),
+      appBar: appbar(context),
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -128,6 +116,44 @@ class HomeView extends GetView<HomeController> {
           Get.offAndToNamed("$route");
         },
         child: Text("$name", style: GoogleFonts.ptSans(color: font)),
+      ),
+    );
+  }
+
+  appbar(context) {
+    return PreferredSize(
+      preferredSize: Size.fromHeight(50.0),
+      child: Material(
+        elevation: 10,
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          color: Colors.black,
+          height: 50,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(5),
+                child: Text(
+                  'Eduardo D\' Alezandro',
+                  style: GoogleFonts.arizonia(color: font),
+                ),
+              ),
+              Row(
+                children: [
+                  buttonsNavegacao("Home", "/home"),
+                  buttonsNavegacao("About", "/about"),
+                  buttonsNavegacao("Experience", "/experience"),
+                  buttonsNavegacao("Projects", "/projects"),
+                  SizedBox(
+                    height: 10,
+                    width: 20,
+                  ),
+                ],
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
