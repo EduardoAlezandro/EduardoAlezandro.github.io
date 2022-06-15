@@ -9,18 +9,20 @@ import '../controllers/projects_controller.dart';
 class ProjectsView extends GetView<ProjectsController> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: appbar(context),
-      body: SingleChildScrollView(
-        child: Container(
-          width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/back1.jpg"),
-              fit: BoxFit.cover,
-              colorFilter: new ColorFilter.mode(
-                  Colors.black.withOpacity(0.8), BlendMode.dstATop),
-            ),
+    return Scaffold(
+      appBar: appbar(context),
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/back1.jpg"),
+            fit: BoxFit.cover,
+            colorFilter: new ColorFilter.mode(
+                Colors.black.withOpacity(0.8), BlendMode.dstATop),
           ),
+        ),
+        child: SingleChildScrollView(
           child: Column(
             children: [
               Container(
@@ -135,7 +137,7 @@ class ProjectsView extends GetView<ProjectsController> {
     );
   }
 
- appbar(context) {
+  appbar(context) {
     return PreferredSize(
       preferredSize: Size.fromHeight(50.0),
       child: Container(

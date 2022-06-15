@@ -16,8 +16,8 @@ class HomeView extends GetView<HomeController> {
     return Scaffold(
       appBar: appbar(context),
       body: Container(
-        width: double.infinity,
-        height: double.infinity,
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/back2.jpg"),
