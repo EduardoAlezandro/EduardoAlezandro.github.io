@@ -9,7 +9,7 @@ import '../controllers/projects_controller.dart';
 class ProjectsView extends GetView<ProjectsController> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(appBar: appbar(context),
       body: SingleChildScrollView(
         child: Container(
           width: MediaQuery.of(context).size.width,
@@ -23,7 +23,6 @@ class ProjectsView extends GetView<ProjectsController> {
           ),
           child: Column(
             children: [
-              appbar(context),
               Container(
                 margin: EdgeInsets.all(50),
                 child: Column(
@@ -136,34 +135,36 @@ class ProjectsView extends GetView<ProjectsController> {
     );
   }
 
-  appbar(context) {
-    return Container(
-      height: 50,
-      width: MediaQuery.of(context).size.width,
-      color: Colors.black,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(5),
-            child: Text(
-              'Eduardo D\' Alezandro',
-              style: GoogleFonts.arizonia(color: font),
-            ),
-          ),
-          Row(
-            children: [
-              buttonsNavegacao("Home", "/home"),
-              buttonsNavegacao("About", "/about"),
-              buttonsNavegacao("Experience", "/experience"),
-              buttonsNavegacao("Projects", "/projects"),
-              SizedBox(
-                height: 10,
-                width: 20,
+ appbar(context) {
+    return PreferredSize(
+      preferredSize: Size.fromHeight(50.0),
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        color: Colors.black,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(5),
+              child: Text(
+                'Eduardo D\' Alezandro',
+                style: GoogleFonts.arizonia(color: font),
               ),
-            ],
-          )
-        ],
+            ),
+            Row(
+              children: [
+                buttonsNavegacao("Home", "/home"),
+                buttonsNavegacao("About", "/about"),
+                buttonsNavegacao("Experience", "/experience"),
+                buttonsNavegacao("Projects", "/projects"),
+                SizedBox(
+                  height: 10,
+                  width: 20,
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

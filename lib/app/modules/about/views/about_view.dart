@@ -10,6 +10,7 @@ class AboutView extends GetView<AboutController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: appbar(context),
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -24,7 +25,6 @@ class AboutView extends GetView<AboutController> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              appbar(context),
               Container(
                 margin: EdgeInsets.all(50),
                 child: Column(
