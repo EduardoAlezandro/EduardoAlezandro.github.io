@@ -22,8 +22,6 @@ class HomeView extends GetView<HomeController> {
           image: DecorationImage(
             image: AssetImage("assets/back2.jpg"),
             fit: BoxFit.cover,
-            colorFilter: new ColorFilter.mode(
-                Colors.black.withOpacity(0.8), BlendMode.dstATop),
           ),
         ),
         child: Row(
@@ -111,7 +109,7 @@ class HomeView extends GetView<HomeController> {
   buttonsNavegacao(name, route) {
     return TextButton(
       onPressed: () {
-        Get.offAndToNamed("$route");
+        Get.toNamed("$route");("$route");
       },
       child: Text("$name", style: GoogleFonts.ptSans(color: font)),
     );
@@ -123,6 +121,7 @@ class HomeView extends GetView<HomeController> {
       child: Container(
         width: MediaQuery.of(context).size.width,
         color: Colors.black,
+        height: 50,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

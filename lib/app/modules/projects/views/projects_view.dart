@@ -18,8 +18,6 @@ class ProjectsView extends GetView<ProjectsController> {
           image: DecorationImage(
             image: AssetImage("back1.jpg"),
             fit: BoxFit.cover,
-            colorFilter: new ColorFilter.mode(
-                Colors.black.withOpacity(0.8), BlendMode.dstATop),
           ),
         ),
         child: SingleChildScrollView(
@@ -128,7 +126,7 @@ class ProjectsView extends GetView<ProjectsController> {
   buttonsNavegacao(name, route) {
     return TextButton(
       onPressed: () {
-        Get.offAndToNamed("$route");
+        Get.toNamed("$route");
       },
       child: Text("$name", style: GoogleFonts.ptSans(color: Color(0xffE6CA76))),
     );
@@ -140,6 +138,7 @@ class ProjectsView extends GetView<ProjectsController> {
       child: Container(
         width: MediaQuery.of(context).size.width,
         color: Colors.black,
+        height: 50,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
