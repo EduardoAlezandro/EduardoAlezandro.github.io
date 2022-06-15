@@ -7,6 +7,7 @@ import '../controllers/experience_controller.dart';
 
 class ExperienceView extends GetView<ExperienceController> {
   Color font = Color(0xffE6CA76);
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,7 +83,7 @@ class ExperienceView extends GetView<ExperienceController> {
       onPressed: () {
         Get.offAndToNamed("$route");
       },
-      child: Text("$name", style: GoogleFonts.ptSans(color: font)),
+      child: Text("$name", style: GoogleFonts.ptSans(color: Color(0xffE6CA76))),
     );
   }
 

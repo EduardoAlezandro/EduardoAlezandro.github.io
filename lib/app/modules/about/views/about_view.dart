@@ -106,14 +106,11 @@ class AboutView extends GetView<AboutController> {
   }
 
   buttonsNavegacao(name, route) {
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: TextButton(
-        onPressed: () {
-          Get.offAndToNamed("$route");
-        },
-        child: Text("$name", style: GoogleFonts.ptSans(color: font)),
-      ),
+    return TextButton(
+      onPressed: () {
+        Get.offAndToNamed("$route");
+      },
+      child: Text("$name", style: GoogleFonts.ptSans(color: Color(0xffE6CA76))),
     );
   }
 

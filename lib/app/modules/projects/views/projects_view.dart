@@ -126,14 +126,11 @@ class ProjectsView extends GetView<ProjectsController> {
   }
 
   buttonsNavegacao(name, route) {
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: TextButton(
-        onPressed: () {
-          Get.offAndToNamed("$route");
-        },
-        child: Text("$name", style: GoogleFonts.ptSans(color: font)),
-      ),
+    return TextButton(
+      onPressed: () {
+        Get.offAndToNamed("$route");
+      },
+      child: Text("$name", style: GoogleFonts.ptSans(color: Color(0xffE6CA76))),
     );
   }
 
@@ -150,7 +147,7 @@ class ProjectsView extends GetView<ProjectsController> {
               padding: const EdgeInsets.all(5),
               child: Text(
                 'Eduardo D\' Alezandro',
-                style: GoogleFonts.arizonia(color: font),
+                style: GoogleFonts.arizonia(color: Color(0xffE6CA76)),
               ),
             ),
             Row(
