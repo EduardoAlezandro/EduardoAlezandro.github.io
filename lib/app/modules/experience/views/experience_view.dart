@@ -57,7 +57,7 @@ class ExperienceView extends GetView<ExperienceController> {
                             Padding(
                               padding: const EdgeInsets.only(top: 8.0),
                               child: Text(
-                                'Com isso no meu tempo nessa empresa desenvolvemos um Projeto completo do zero e eu estive em todos os processos, Os telas desse projeto que foi feita por mim, estão disponiveis na aba de "Projetos" ',
+                                'Com isso no meu tempo nessa empresa desenvolvemos um Projeto completo do zero e eu estive em todos os processos, As telas desse projeto que foi feita por mim, estão disponiveis na aba de "Projetos" ',
                                 style: GoogleFonts.montserrat(
                                     fontSize: 20, color: font),
                               ),

@@ -36,7 +36,7 @@ class AboutView extends GetView<AboutController> {
                         child: Wrap(
                           children: [
                             Text(
-                              '  Olá tudo bom? Meu nome é Eduardo tenho 21 anos, sou um Desenvolvedor de Software. \n  Minha na área de desenvolvimento começou com um curso técnico de Desenvolvimento de jogos, com isso percebi que tenho meio que "Um Talento", no geral tive uma facilidade muito grande com a logica progamacional com isso participei em algumas Hackathon e todas que eu entrei eu acabei ganhando em primeiro lugar',
+                              '  Olá tudo bom? Meu nome é Eduardo tenho 21 anos, sou um Desenvolvedor de Software. \n  Minha jornada na área de desenvolvimento começou com um curso técnico de Desenvolvimento de jogos, com isso percebi que tenho meio que "Um Talento", no geral tive uma facilidade muito grande com a logica progamacional com isso participei em algumas Hackathon e todas que eu entrei eu acabei ganhando em primeiro lugar',
                               style: GoogleFonts.montserrat(
                                   fontSize: 20, color: font),
                             ),
