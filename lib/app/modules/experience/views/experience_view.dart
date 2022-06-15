@@ -10,6 +10,7 @@ class ExperienceView extends GetView<ExperienceController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: appbar(context),
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -24,7 +25,6 @@ class ExperienceView extends GetView<ExperienceController> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              appbar(),
               Container(
                 margin: EdgeInsets.all(50),
                 child: Column(
@@ -86,13 +86,12 @@ class ExperienceView extends GetView<ExperienceController> {
     );
   }
 
-  appbar() {
-    return Material(
-      elevation: 10,
+  appbar(context) {
+    return PreferredSize(
+      preferredSize: Size.fromHeight(50.0),
       child: Container(
-        width: double.infinity,
+        width: MediaQuery.of(context).size.width,
         color: Colors.black,
-        height: 50,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -105,7 +104,7 @@ class ExperienceView extends GetView<ExperienceController> {
             ),
             Row(
               children: [
-                buttonsNavegacao("Homee", "/home"),
+                buttonsNavegacao("Home", "/home"),
                 buttonsNavegacao("About", "/about"),
                 buttonsNavegacao("Experience", "/experience"),
                 buttonsNavegacao("Projects", "/projects"),
