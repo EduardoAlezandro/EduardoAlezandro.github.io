@@ -78,14 +78,11 @@ class ExperienceView extends GetView<ExperienceController> {
   }
 
   buttonsNavegacao(name, route) {
-    return Padding(
-      padding: const EdgeInsets.all(2.5),
-      child: TextButton(
-        onPressed: () {
-          Get.offAndToNamed("$route");
-        },
-        child: Text("$name", style: GoogleFonts.ptSans(color: font)),
-      ),
+    return TextButton(
+      onPressed: () {
+        Get.offAndToNamed("$route");
+      },
+      child: Text("$name", style: GoogleFonts.ptSans(color: font)),
     );
   }
 
@@ -108,10 +105,14 @@ class ExperienceView extends GetView<ExperienceController> {
             ),
             Row(
               children: [
-                buttonsNavegacao("Home", "/home"),
+                buttonsNavegacao("Homee", "/home"),
                 buttonsNavegacao("About", "/about"),
                 buttonsNavegacao("Experience", "/experience"),
                 buttonsNavegacao("Projects", "/projects"),
+                SizedBox(
+                  height: 10,
+                  width: 20,
+                ),
               ],
             )
           ],
