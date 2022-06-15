@@ -7,7 +7,7 @@ import '../controllers/experience_controller.dart';
 
 class ExperienceView extends GetView<ExperienceController> {
   Color font = Color(0xffE6CA76);
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +17,7 @@ class ExperienceView extends GetView<ExperienceController> {
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/back1.jpg"),
+            image: AssetImage("back1.jpg"),
             fit: BoxFit.cover,
             colorFilter: new ColorFilter.mode(
                 Colors.black.withOpacity(0.8), BlendMode.dstATop),

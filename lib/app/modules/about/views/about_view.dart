@@ -16,7 +16,7 @@ class AboutView extends GetView<AboutController> {
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/back1.jpg"),
+            image: AssetImage("back1.jpg"),
             fit: BoxFit.cover,
             colorFilter: new ColorFilter.mode(
                 Colors.black.withOpacity(0.8), BlendMode.dstATop),
