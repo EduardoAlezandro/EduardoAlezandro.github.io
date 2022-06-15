@@ -9,6 +9,10 @@ class ExperienceView extends GetView<ExperienceController> {
   Color font = Color(0xffE6CA76);
   @override
   Widget build(BuildContext context) {
+    return WebView(context);
+  }
+
+  Scaffold WebView(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -86,7 +90,7 @@ class ExperienceView extends GetView<ExperienceController> {
 
   buttonsNavegacao(name, route) {
     return Padding(
-      padding: const EdgeInsets.all(15.0),
+      padding: const EdgeInsets.all(8.0),
       child: TextButton(
         onPressed: () {
           Get.offAndToNamed("$route");
